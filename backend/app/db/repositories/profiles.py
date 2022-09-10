@@ -1,5 +1,4 @@
-from typing import Optional
-from typing import Union
+from typing import Optional, Union
 
 from app.db.queries.queries import queries
 from app.db.repositories.base import BaseRepository

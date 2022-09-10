@@ -1,6 +1,5 @@
 # noqa:WPS201
-from typing import Callable
-from typing import Optional
+from typing import Callable, Optional
 
 from app.api.dependencies.database import get_repository
 from app.core.config import get_app_settings
@@ -10,12 +9,9 @@ from app.db.repositories.users import UsersRepository
 from app.models.domain.users import User
 from app.resources import strings
 from app.services import jwt
-from fastapi import Depends
-from fastapi import HTTPException
-from fastapi import Security
+from fastapi import Depends, HTTPException, Security
 from fastapi.security import APIKeyHeader
-from starlette import requests
-from starlette import status
+from starlette import requests, status
 from starlette.exceptions import HTTPException as StarletteHTTPException
 
 HEADER_KEY = "Authorization"

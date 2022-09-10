@@ -7,9 +7,7 @@ from app.db.repositories.profiles import ProfilesRepository
 from app.models.domain.profiles import Profile
 from app.models.domain.users import User
 from app.resources import strings
-from fastapi import Depends
-from fastapi import HTTPException
-from fastapi import Path
+from fastapi import Depends, HTTPException, Path
 from starlette.status import HTTP_404_NOT_FOUND
 
 

@@ -1,5 +1,4 @@
-from typing import List
-from typing import Sequence
+from typing import List, Sequence
 
 from app.db.queries.queries import queries
 from app.db.repositories.base import BaseRepository

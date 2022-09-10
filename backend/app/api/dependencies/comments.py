@@ -1,8 +1,6 @@
 from typing import Optional
 
-from app.api.dependencies import authentication
-from app.api.dependencies import database
-from app.api.dependencies import items
+from app.api.dependencies import authentication, database, items
 from app.db.errors import EntityDoesNotExist
 from app.db.repositories.comments import CommentsRepository
 from app.models.domain.comments import Comment
@@ -10,9 +8,7 @@ from app.models.domain.items import Item
 from app.models.domain.users import User
 from app.resources import strings
 from app.services.comments import check_user_can_modify_comment
-from fastapi import Depends
-from fastapi import HTTPException
-from fastapi import Path
+from fastapi import Depends, HTTPException, Path
 from starlette import status
 
 

@@ -1,9 +1,5 @@
-from app.api.routes import authentication
-from app.api.routes import comments
-from app.api.routes import ping
-from app.api.routes import profiles
-from app.api.routes import tags
-from app.api.routes import users
+from app.api.routes import (authentication, comments, ping, profiles, tags,
+                            users)
 from app.api.routes.items import api as items
 from fastapi import APIRouter
 

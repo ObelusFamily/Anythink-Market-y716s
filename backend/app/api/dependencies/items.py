@@ -6,15 +6,11 @@ from app.db.errors import EntityDoesNotExist
 from app.db.repositories.items import ItemsRepository
 from app.models.domain.items import Item
 from app.models.domain.users import User
-from app.models.schemas.items import DEFAULT_ITEMS_LIMIT
-from app.models.schemas.items import DEFAULT_ITEMS_OFFSET
-from app.models.schemas.items import ItemsFilters
+from app.models.schemas.items import (DEFAULT_ITEMS_LIMIT,
+                                      DEFAULT_ITEMS_OFFSET, ItemsFilters)
 from app.resources import strings
 from app.services.items import check_user_can_modify_item
-from fastapi import Depends
-from fastapi import HTTPException
-from fastapi import Path
-from fastapi import Query
+from fastapi import Depends, HTTPException, Path, Query
 from starlette import status
 
 

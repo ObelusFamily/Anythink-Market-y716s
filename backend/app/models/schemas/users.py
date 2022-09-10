@@ -2,9 +2,7 @@ from typing import Optional
 
 from app.models.domain.users import User
 from app.models.schemas.rwschema import RWSchema
-from pydantic import BaseModel
-from pydantic import EmailStr
-from pydantic import HttpUrl
+from pydantic import BaseModel, EmailStr, HttpUrl
 
 
 class UserInLogin(RWSchema):

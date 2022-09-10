@@ -6,9 +6,7 @@ from app.models.domain.profiles import Profile
 from app.models.domain.users import User
 from app.models.schemas.profiles import ProfileInResponse
 from app.resources import strings
-from fastapi import APIRouter
-from fastapi import Depends
-from fastapi import HTTPException
+from fastapi import APIRouter, Depends, HTTPException
 from starlette.status import HTTP_400_BAD_REQUEST
 
 router = APIRouter()

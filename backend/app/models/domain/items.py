@@ -1,8 +1,6 @@
-from typing import List
-from typing import Optional
+from typing import List, Optional
 
-from app.models.common import DateTimeModelMixin
-from app.models.common import IDModelMixin
+from app.models.common import DateTimeModelMixin, IDModelMixin
 from app.models.domain.profiles import Profile
 from app.models.domain.rwmodel import RWModel
 

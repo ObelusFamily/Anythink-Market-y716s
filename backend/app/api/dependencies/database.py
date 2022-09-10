@@ -1,6 +1,4 @@
-from typing import AsyncGenerator
-from typing import Callable
-from typing import Type
+from typing import AsyncGenerator, Callable, Type
 
 from app.db.repositories.base import BaseRepository
 from asyncpg.connection import Connection

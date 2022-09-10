@@ -1,7 +1,6 @@
 import datetime
 
-from pydantic import BaseConfig
-from pydantic import BaseModel
+from pydantic import BaseConfig, BaseModel
 
 
 def convert_datetime_to_realworld(dt: datetime.datetime) -> str:

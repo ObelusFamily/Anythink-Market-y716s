@@ -1,11 +1,9 @@
-from datetime import datetime
-from datetime import timedelta
+from datetime import datetime, timedelta
 from typing import Dict
 
 import jwt
 from app.models.domain.users import User
-from app.models.schemas.jwt import JWTMeta
-from app.models.schemas.jwt import JWTUser
+from app.models.schemas.jwt import JWTMeta, JWTUser
 from pydantic import ValidationError
 
 JWT_SUBJECT = "access"
