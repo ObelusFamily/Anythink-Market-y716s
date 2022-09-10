@@ -1,12 +1,12 @@
-from typing import Optional, Union
-
-from asyncpg import Connection
+from typing import Optional
+from typing import Union
 
 from app.db.queries.queries import queries
 from app.db.repositories.base import BaseRepository
 from app.db.repositories.users import UsersRepository
 from app.models.domain.profiles import Profile
 from app.models.domain.users import User
+from asyncpg import Connection
 
 UserLike = Union[User, Profile]
 

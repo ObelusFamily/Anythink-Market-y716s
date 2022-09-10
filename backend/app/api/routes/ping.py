@@ -1,8 +1,10 @@
 import json
 import logging
 
-from fastapi import APIRouter, Depends, HTTPException
 from app.services.event import send_event
+from fastapi import APIRouter
+from fastapi import Depends
+from fastapi import HTTPException
 
 router = APIRouter()
 

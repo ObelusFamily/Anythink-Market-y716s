@@ -1,8 +1,8 @@
 import logging
 
-from pydantic import PostgresDsn, SecretStr
-
 from app.core.settings.app import AppSettings
+from pydantic import PostgresDsn
+from pydantic import SecretStr
 
 
 class TestAppSettings(AppSettings):

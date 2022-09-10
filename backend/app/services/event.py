@@ -1,6 +1,7 @@
-import os
-import requests
 import json
+import os
+
+import requests
 
 PATH_TO_WILCO_ID = '../.wilco'
 BASE_URL = 'https://engine.wilco.gg'

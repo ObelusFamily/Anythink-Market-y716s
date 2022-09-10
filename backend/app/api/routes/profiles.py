@@ -1,6 +1,3 @@
-from fastapi import APIRouter, Depends, HTTPException
-from starlette.status import HTTP_400_BAD_REQUEST
-
 from app.api.dependencies.authentication import get_current_user_authorizer
 from app.api.dependencies.database import get_repository
 from app.api.dependencies.profiles import get_profile_by_username_from_path
@@ -9,6 +6,10 @@ from app.models.domain.profiles import Profile
 from app.models.domain.users import User
 from app.models.schemas.profiles import ProfileInResponse
 from app.resources import strings
+from fastapi import APIRouter
+from fastapi import Depends
+from fastapi import HTTPException
+from starlette.status import HTTP_400_BAD_REQUEST
 
 router = APIRouter()
 

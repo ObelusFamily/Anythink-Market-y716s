@@ -1,23 +1,24 @@
-from typing import List, Optional, Sequence, Union
-
-from asyncpg import Connection, Record
-from pypika import Query
+from typing import List
+from typing import Optional
+from typing import Sequence
+from typing import Union
 
 from app.db.errors import EntityDoesNotExist
 from app.db.queries.queries import queries
-from app.db.queries.tables import (
-    Parameter,
-    items,
-    items_to_tags,
-    favorites,
-    tags as tags_table,
-    users,
-)
+from app.db.queries.tables import Parameter
+from app.db.queries.tables import favorites
+from app.db.queries.tables import items
+from app.db.queries.tables import items_to_tags
+from app.db.queries.tables import tags as tags_table
+from app.db.queries.tables import users
 from app.db.repositories.base import BaseRepository
 from app.db.repositories.profiles import ProfilesRepository
 from app.db.repositories.tags import TagsRepository
 from app.models.domain.items import Item
 from app.models.domain.users import User
+from asyncpg import Connection
+from asyncpg import Record
+from pypika import Query
 
 SELLER_USERNAME_ALIAS = "seller_username"
 SLUG_ALIAS = "slug"
